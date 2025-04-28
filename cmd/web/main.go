@@ -3,13 +3,14 @@ package main
 import (
 	"fmt"
 	"log"
-	"myapp3/pkg/config"
-	"myapp3/pkg/handlers"
-	"myapp3/pkg/renders"
 	"net/http"
 	"time"
 
+	"github.com/zeremyarby/go-bookings/pkg/config"
+
 	"github.com/alexedwards/scs/v2"
+	"github.com/zeremyarby/go-bookings/pkg/handlers"
+	"github.com/zeremyarby/go-bookings/pkg/renders"
 )
 
 const portNumber = ":8080"
@@ -21,6 +22,7 @@ var session *scs.SessionManager
 // main is the main application function
 func main() {
 
+	fmt.Println("Starting application on port 8080")
 	app.InProduction = false
 
 	session = scs.New()
@@ -52,7 +54,7 @@ func main() {
 	err = serve.ListenAndServe()
 	log.Fatal(err)
 
-	fmt.Println("Starting application on port 8080")
+	// fmt.Println("Starting application on port 8080")
 	// fmt.Println(fmt.Sprintf("Starting application on port %s", portNumber))
 	// _ = http.ListenAndServe(":8080", nil)
 }

@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"myapp3/pkg/config"
-	"myapp3/pkg/models"
-	"myapp3/pkg/renders"
 	"net/http"
+
+	"github.com/zeremyarby/go-bookings/pkg/config"
+	"github.com/zeremyarby/go-bookings/pkg/models"
+	"github.com/zeremyarby/go-bookings/pkg/renders"
 )
 
 var Repo *Repository

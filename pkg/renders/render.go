@@ -5,10 +5,11 @@ import (
 	"fmt"
 	"html/template"
 	"log"
-	"myapp3/pkg/config"
-	"myapp3/pkg/models"
 	"net/http"
 	"path/filepath"
+
+	"github.com/zeremyarby/go-bookings/pkg/config"
+	"github.com/zeremyarby/go-bookings/pkg/models"
 )
 
 var app *config.AppConfig

@@ -1,9 +1,10 @@
 package main
 
 import (
-	"myapp3/pkg/config"
-	"myapp3/pkg/handlers"
 	"net/http"
+
+	"github.com/zeremyarby/go-bookings/pkg/config"
+	"github.com/zeremyarby/go-bookings/pkg/handlers"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
