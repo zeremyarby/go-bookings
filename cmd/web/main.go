@@ -23,6 +23,7 @@ var session *scs.SessionManager
 func main() {
 
 	fmt.Println("Starting application on port 8080")
+
 	app.InProduction = false
 
 	session = scs.New()
